@@ -6,6 +6,14 @@ Homebrew tap for my macOS apps.
 brew tap irfanh94/tap
 ```
 
+Homebrew requires third-party taps to be trusted explicitly before it will load a cask
+from them, so there is one extra step compared with `homebrew/cask`. Trusting a single
+cask is narrower than trusting the whole tap, and is enough:
+
+```bash
+brew trust --cask irfanh94/tap/no-afk
+```
+
 ## Casks
 
 ### [No AFK](https://github.com/irfanh94/no-afk)
